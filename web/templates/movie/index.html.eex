@@ -1,0 +1,5 @@
+<div class="jumbotron">
+  <h2>Listing movies</h2>
+</div>
+<ul class="movies"></ul>
+<a class="new-movie" href="/movies/new">New movie</a>
