@@ -1,3 +1,10 @@
 <div class="jumbotron">
-  <h2>movie.title</h2>
+  <div class="movie">
+    <h2><%= @movie.title %>, <%= @movie.year %></h2>
+    <!-- <%= #tag(:img, src: @movie.cover) %> -->
+    <img src="<%= @movie.cover %>"></img>
+    <!-- <%= #tag(:p, @movie.plot) %> -->
+    <p><%= @movie.plot %></p>
+    <%= link("Back", to: movie_path(@conn, :index), class: "back") %>
+  </div>
 </div>
