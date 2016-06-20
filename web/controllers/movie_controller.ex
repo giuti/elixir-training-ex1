@@ -1,7 +1,9 @@
 defmodule Ex1.MovieController do
   use Ex1.Web, :controller
 
+  alias Ex1.Movies
+
   def index(conn, _params) do
-    render conn, "index.html"
+    render conn, "index.html", movies: Movies.all
   end
 end

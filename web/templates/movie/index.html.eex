@@ -1,5 +1,9 @@
 <div class="jumbotron">
   <h2>Listing movies</h2>
 </div>
-<ul class="movies"></ul>
+<ul class="movies">
+  <%= for movie <- @movies do %>
+    <li><%= link(movie.title, to: movie_path(@conn, :show, movie.id)) %></li>
+  <% end %>
+</ul>
 <a class="new-movie" href="/movies/new">New movie</a>
