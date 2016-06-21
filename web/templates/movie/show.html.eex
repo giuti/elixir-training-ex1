@@ -3,7 +3,7 @@
     <h2><%= @movie.title %>, <%= @movie.year %></h2>
     <!-- <%= #tag(:img, src: @movie.cover) %> -->
     <img src="<%= @movie.cover %>"></img>
-    <!-- <%= #tag(:p, @movie.plot) %> -->
+    <!-- <%= #content_tag(:p, @movie.plot) %> -->
     <p><%= @movie.plot %></p>
     <%= link("Back", to: movie_path(@conn, :index), class: "back") %>
   </div>
